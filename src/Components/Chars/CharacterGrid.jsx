@@ -1,12 +1,13 @@
 import React from 'react'
 import './CharacterGrid.css'
+import CharacterItem from './CharacterItem'
 
 export const CharacterGrid = ({ items, isloading, setPage, page }) => {
     return isloading ? <h1>loading...</h1> : <section className='cards'>
         {items.map(item => (
             <div>
-                <h1>{item.name}</h1>
-                <img src={item.image_url} />
+                <CharacterItem key={item.id} item={item} />
+
             </div>
 
         ))}
