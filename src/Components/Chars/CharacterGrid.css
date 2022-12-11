@@ -1,0 +1,13 @@
+.load-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(42, 14, 199);
+    background: rgb(96, 151, 206);
+    border: solid #bbb 3px;
+    border-radius: 40px;
+
+}

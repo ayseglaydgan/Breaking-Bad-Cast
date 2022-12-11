@@ -1,4 +1,5 @@
 import React from 'react'
+import './CharacterGrid.css'
 
 export const CharacterGrid = ({ items, isloading, setPage, page }) => {
     return isloading ? <h1>loading...</h1> : <section className='cards'>
@@ -9,7 +10,7 @@ export const CharacterGrid = ({ items, isloading, setPage, page }) => {
             </div>
 
         ))}
-        <button onClick={() => setPage(page + 1)}>Load More</button>
+        <button className='load-btn' onClick={() => setPage(page + 1)}>Load More</button>
     </section>
 }
 
